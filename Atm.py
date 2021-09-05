@@ -2,12 +2,12 @@ class Atm:
     def __init__(self,cardnumber,pin):
         self.cardnumber = cardnumber
         self.pin = pin
-
+        
     def balanceinquiry(self):
         print("Your balance is: $100")
 
     def cashwithdrawal(self,amount):
-        new_amount = 100 + amount
+        new_amount = 100 - amount
         print("You withdrawed: " + str(amount) + " Your remaing balance is: " + str(new_amount))
 
 def main():
